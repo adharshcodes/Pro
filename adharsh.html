@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Booking</title>
+</head>
+<body>
+    <h1>Bus Ticket Booking</h1>
+    <form action="process_booking.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="bus_route">Bus Route:</label>
+        <select id="bus_route" name="bus_route" required>
+            <option value="Route 1">Route 1</option>
+            <option value="Route 2">Route 2</option>
+            <!-- Add more route options here -->
+        </select><br>
+
+        <label for="date">Travel Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="num_tickets">Number of Tickets:</label>
+        <input type="number" id="num_tickets" name="num_tickets" min="1" required><br>
+
+        <input type="submit" value="Book Tickets">
+    </form>
+</body>
+</html>
